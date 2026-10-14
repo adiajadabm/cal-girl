@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Berkeley Dress-Up</title>
+  <link rel="stylesheet" href="style.css?v=30">
+</head>
+<body>
+  <main id="frame">
+    <div id="stage">
+
+      <div id="canvas">
+        <div id="backdrops"></div>
+        <div id="sprites">
+          <div id="walker"><div id="poser"><div id="figure"></div></div></div>
+          <img id="seat" src="assets/bg/bus-seat.png" alt="">
+        </div>
+        <div id="grain"></div>
+        <div id="flash"></div>
+      </div>
+
+      <header id="masthead">
+        <span class="logo">Cal Girl</span>
+        <span class="tagline">Berkeley's best-dressed weekly</span>
+      </header>
+
+      <div id="teasers" aria-hidden="true"><p></p><p></p><p></p></div>
+
+      <div class="burst" id="pick" aria-hidden="true"></div>
+
+      <aside class="page" id="closet" aria-label="Closet">
+        <h2>Steal her style!</h2>
+        <p class="deck">Tap it and she wears it. Tap again and it's so last week.</p>
+        <nav id="tabs" role="tablist" aria-label="Closet sections"></nav>
+        <div id="tiles"></div>
+      </aside>
+
+      <div id="rail">
+        <span id="hair" role="group" aria-label="Choose your girl"></span>
+        <button class="sticker" id="shop">Shop</button>
+        <button class="sticker" id="save">Save</button>
+        <button class="sticker" id="reset">Redo</button>
+      </div>
+
+      <section class="page" id="story" aria-label="Her day">
+        <h1 id="place" aria-live="polite"></h1>
+        <p id="caption" aria-live="polite"></p>
+        <div class="row">
+          <span id="dots" aria-hidden="true"></span>
+          <button id="story-prev" aria-label="Previous part of the day">◀ Back</button>
+          <button id="story-next" aria-label="Next part of the day">Next ▶</button>
+        </div>
+      </section>
+
+      <div id="veil" hidden>
+        <div class="page" id="sheet" role="dialog" aria-modal="true">
+          <button id="sheet-close" aria-label="Close">✕</button>
+          <div id="sheet-body"></div>
+        </div>
+      </div>
+
+      <div id="toast" role="status"></div>
+      <div id="paper"></div>
+    </div>
+  </main>
+  <script src="assets/fits.js?v=30"></script>
+  <script src="audio.js?v=30"></script>
+  <script src="game.js?v=30"></script>
+</body>
+</html>
