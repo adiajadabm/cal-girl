@@ -1,9 +1,10 @@
 // The game's sound. Her earbuds play the songs in TRACKS; if a file is missing, a little loop made in
 // the browser plays instead. The coffee, cigarette and camera effects are made in the browser too.
 const TRACKS = {
-  'my way — olivia rodrigo': 'assets/music/my-way.mp3',
-  'prom song gone wrong': 'assets/music/prom-song-gone-wrong.mp3',
-  'nicole kidman — adéla': 'assets/music/nicole-kidman.mp3',
+  'kissing': 'assets/music/kissing.mp3',
+  'sweet love': 'assets/music/sweet-love.mp3',
+  'so fly': 'assets/music/so-fly.mp3',
+  'cherry cigarettes': 'assets/music/cherry-cigarettes.mp3',
 };
 
 const Sound = (() => {
